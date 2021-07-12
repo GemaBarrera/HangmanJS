@@ -1,0 +1,2 @@
+# HangmanJS
+Vanilla JS Hangman
