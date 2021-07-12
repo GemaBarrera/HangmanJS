@@ -1,0 +1,43 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div id="game-cont">
+    <h1 id="title">Hangman Game</h1>
+    <div id="feedback"></div>
+
+    <div id="middle-div">
+
+      <div class="middle-cont">
+        <div class="chosen-cont">
+          <p class="datagame-title">CHOSEN LETTERS:</p>
+          <div id="chosen-letters"></div>
+        </div>
+        <div id="word-to-guess"></div>
+      </div>
+
+      <div class="middle-cont">
+        <div id="attempts-cont">
+          <div id="attempts">
+            <p class="datagame-title">
+              REMAINING ATTEMPTS:
+              <span id="remaining-attempts"></span>
+            </p>
+          </div>
+          <div id="images">
+            <img id="img" src="./images/7.png" class="guy" />
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div id="keyboard"></div>
+    <button id="new">NEW GAME</button>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
