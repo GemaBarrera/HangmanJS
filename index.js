@@ -17,7 +17,7 @@ class Hangman {
   // METHODS
   // Pick a word to guess
   onChooseAWord() {
-    const words = ["camion", "avioneta", "helicoptero", "locomotora", "tractor", "transatlantico", "cayuco"];
+    const words = ["octopus", "chipmunk", "hyena", "snail", "cockroach", "butterfly", "rhinoceros", "lizard"];
     const randomNum = Math.floor(Math.random() * words.length);
     const wordToShow = words.filter((word, i) => i === randomNum).join('');
     console.log("wordtoshow", wordToShow);
@@ -150,7 +150,7 @@ class Hangman {
     this.wordStatus = null;
     this.onRestartAttempts();
     this.onRestartChosenLetters();
-    this.setFeedback("GUESS THE WORD !");
+    this.setFeedback("THE HINT IS: 'ANIMALS' <br> GUESS THE WORD !");
     this.imageToShow.src = "./images/7.png";
   };
 
