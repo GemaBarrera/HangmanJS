@@ -20,9 +20,7 @@ class Hangman {
     const words = ["octopus", "chipmunk", "hyena", "snail", "cockroach", "butterfly", "rhinoceros", "lizard"];
     const randomNum = Math.floor(Math.random() * words.length);
     const wordToShow = words.filter((word, i) => i === randomNum).join('');
-    console.log("wordtoshow", wordToShow);
     this.wordToGuess = wordToShow;
-    console.log("wordToGuess", this.wordToGuess)
   };
 
   // Paint the hidden word lines and guessed letters
